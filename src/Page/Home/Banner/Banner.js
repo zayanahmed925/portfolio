@@ -1,9 +1,6 @@
 import React from 'react';
 import './Banner.css';
-import hero from "../../../pic/banner-00.png"
-import skill1 from "../../../pic/skill1.png"
-import skill2 from "../../../pic/skill2.png"
-import skill3 from "../../../pic/skill3.png"
+import hero from "../../../pic/bnanner1.jpg"
 import { Typewriter } from "react-simple-typewriter"
 
 const Banner = () => {
@@ -13,10 +10,10 @@ const Banner = () => {
                 <div className='container f_flex top'>
                     <div className='left top'>
                         <h4>WELCOME TO MY WORLD</h4>
-                        <h1>
+                        <h1 className='md:text-3xl lg:text-5xl font-bold'>
                             I’m Zehadul Islam
                         </h1>
-                        <h2>
+                        <h2 className='md:text-3xl'>
 
                             <span>
 
@@ -26,20 +23,18 @@ const Banner = () => {
 
                         <p> I am a front-end web application developer, and I am especially proﬁcient with Javascript and React.js frameworks..</p>
 
-                        <div className='hero_btn d_flex'>
-                            <div className='col_1'>
-                                <h4>BEST SKILL ON</h4>
-                                <div className='button'>
+                        <div className=' d_flex mt-12 '>
+                            <div className='col_1 '>
+                                <h4>FIND WITH ME</h4>
+                                <div className='button grid gap-1'>
                                     <button className='btn_shadow'>
-                                        <i class="fa-brands fa-js"></i>
+                                        <i class="fa-brands fa-linkedin"></i>
 
                                     </button>
                                     <button className='btn_shadow'>
-                                        <i class="fa-brands fa-react"></i>
+                                        <i class="fa-brands fa-github"></i>
                                     </button>
-                                    <button className='btn_shadow'>
-                                        <i class="fa-brands fa-node"></i>
-                                    </button>
+
                                 </div>
                             </div>
                             <div className='col_1'>
@@ -47,17 +42,11 @@ const Banner = () => {
                                 <button className='btn_shadow'>
                                     <a href="https://drive.google.com/file/d/1Audnj2KrRDs5HZO3bbN1NpQD0u7MB_Rq/view?usp=sharing" target="_blank" rel="noopener noreferrer">My Resume <i className='fa fa-long-arrow-right'></i></a>
                                 </button>
-                                {/* <button className='btn_shadow'>
-                                    <img src={skill2} alt='' />
-                                </button>
-                                <button className='btn_shadow'>
-                                    <img src={skill3} alt='' />
-                                </button> */}
                             </div>
                         </div>
                     </div>
                     <div className='right'>
-                        <div className='right_img'>
+                        <div className=''>
                             <img src={hero} alt='' />
                         </div>
                     </div>

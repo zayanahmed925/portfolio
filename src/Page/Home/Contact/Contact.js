@@ -41,42 +41,95 @@ const Contact = () => {
                                     <p>I am a front-end web application developer, and I am especially proﬁcient with Javascript and React.js frameworks.</p> <br />
                                     <p>Phone: 01621074325</p>
                                     <p>Email: zehadul925@gmail.com</p> <br />
-                                    <span >FIND WITH ME</span>
+                                    <span >BEST SKILL ON</span>
                                     <div className='button '>
                                         <button className='btn_shadow'>
-                                            <i className='fab fa-facebook-f'></i>
+                                            <i class="fa-brands fa-js"></i>
                                         </button>
                                         <button className='btn_shadow'>
-                                            <i className='fab fa-instagram'></i>
+                                            <i class="fa-brands fa-react"></i>
                                         </button>
                                         <button className='btn_shadow'>
-                                            <i className='fab fa-twitter'></i>
+                                            <i class="fa-brands fa-node"></i>
                                         </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div className='right box_shodow'>
+                        <div className='right box_shodow px-6'>
+
                             <form ref={form} onSubmit={formSubmit}>
 
-                                <div className='input'>
-                                    <span>YOUR NAME</span>
-                                    <input type='text' placeholder='Enter Your Name' name="user_name" required />
+                                <div class="mb-4 mt-2">
+                                    <input
+                                        type="text"
+                                        placeholder="Enter Your Name"
+                                        name="user_name"
+                                        required
+                                        class="
+                                    w-full
+                                    rounded
+                                    p-3
+                                    text-gray-800
+                                    dark:text-gray-50
+                                    dark:bg-slate-700
+                                    border-gray-500
+                                    dark:border-slate-600
+                                    outline-none
+                                    focus-visible:shadow-none
+                                    focus:border-red-200
+                                    "
+                                    />
+                                </div>
+                                <div class="mb-4">
+                                    <input
+                                        type="email"
+                                        placeholder="Enter Your Email"
+                                        name="user_email" required
+                                        class="
+                                    w-full
+                                    rounded
+                                    p-3
+                                    text-gray-800
+                                    dark:text-gray-50
+                                    dark:bg-slate-700
+                                    border-gray-500
+                                    dark:border-slate-600
+                                    outline-none
+                                    focus-visible:shadow-none
+                                    focus:border-red-200
+                                    "
+                                    />
                                 </div>
 
+                                <div class="mb-4">
+                                    <textarea
+                                        placeholder="Your Message"
+                                        name="message"
+                                        required
+                                        class="
+                                    w-full
+                                    rounded
+                                    p-3
+                                    text-gray-800
+                                    dark:text-gray-50
+                                    dark:bg-slate-700
+                                    border-gray-500
+                                    dark:border-slate-600
+                                    outline-none
+                                    focus-visible:shadow-none
+                                    focus:border-red-200
+                                    "
 
-                                <div className='input'>
-                                    <span>EMAIL </span>
-                                    <input type='email' placeholder='Enter Your Email' name="user_email" required />
+                                    ></textarea>
                                 </div>
-                                <div className='input'>
-                                    <span>YOUR MESSAGE </span>
-                                    <textarea name="message" placeholder='Enter Your message' required></textarea>
+                                <div>
+                                    <button className='btn_shadow'>
+                                        SEND MESSAGE <i className='fa fa-long-arrow-right'></i>
+                                    </button>
                                 </div>
-                                <button className='btn_shadow'>
-                                    SEND MESSAGE <i className='fa fa-long-arrow-right'></i>
-                                </button>
+
                             </form>
                             <ToastContainer />
                         </div>

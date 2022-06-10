@@ -1,25 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const ProjectCard = (props) => {
-    console.log(props);
+const ProjectCard = ({ value }) => {
+    // console.log(value.id);
     return (
-        <div className="card  bg-base-100 shadow-xl border-2 border-orange-500">
-            <figure className="px-4 pt-4">
-                <img src={props.image} alt="Shoes" className="rounded-xl" />
+        <div className="card  bg-base-100 shadow-xl box">
+            <figure className="px-4 pt-4 ">
+                <img src={value.image} alt="Shoes" className="rounded-xl " />
             </figure>
             <div className="card-body  ">
-                <h2 className="card-title">{props.title}</h2>
-                <p className="card-title">
-                    Price:
-                    <div className="badge badge-secondary">Per Pics</div>
-                </p>
-                <p>Available Quantity:  Pcs</p>
-                <p>Minimum Order:  Pcs</p>
-                <p><small></small></p>
-
+                <h2 className="card-title">{value.title}</h2>
             </div>
+            <Link to={`/project/${value.id}`}>
+                <button className='btn_shadow w-full'>
+                    SEND MESSAGE <i className='fa fa-long-arrow-right'></i>
+                </button>
+            </Link>
 
-            <button className=' btn btn-primary w-full max-w-xl flex items-center'>Visit here</button>
         </div>
     );
 };

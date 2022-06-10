@@ -8,10 +8,10 @@
     letter-spacing: 2px;
 }
 
-.hero h1 {
+/* .hero h1 {
     font-size: 50px;
     font-weight: bold;
-}
+} */
 
 .hero h1 span {
     color: #ff014f;
@@ -32,13 +32,13 @@
 .hero p {
     color: #878e99;
     font-size: 18px;
-    /* line-height: 30px; */
-    /* margin-top: 20px; */
+
 }
 
-.hero_btn {
+/* .hero_btn {
     margin-top: 10%;
-}
+    margin-right: 20px;
+} */
 
 .hero_btn h4 {
     font-weight: 500;
@@ -82,12 +82,24 @@
 .hero .right_img img {
     position: absolute;
     top: 0;
-    margin-top: -50px;
-    /* right: 8%; */
+    margin-top: -70px;
+
     width: 100%;
 }
 
 @media (max-width: 425px) {
+
+    .hero h1,
+    h2 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .hero p {
+        color: #878e99;
+        font-size: 15px;
+
+    }
 
     .hero .right,
     .hero .left {
@@ -101,7 +113,7 @@
     }
 
     .hero .right_img {
-        width: 100%;
-        height: 238px;
+        width: 95%;
+        height: 272px;
     }
 }
