@@ -5,9 +5,9 @@ const Footer = () => {
         <div>
             <footer class="footer mt-12 footer-center p-10 bg-base-200 text-base-content rounded">
                 <div class="grid grid-flow-col gap-4">
-                    <a class="link link-hover">About us</a>
+                    <a class="link link-hover">About Me</a>
                     <a class="link link-hover">Contact</a>
-                    <a class="link link-hover">Jobs</a>
+                    <a class="link link-hover">Project</a>
                     <a class="link link-hover">Press kit</a>
                 </div>
                 <div>
@@ -18,7 +18,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div>
-                    <p>Copyright © 2022 - All right reserved by ACME Industries Ltd</p>
+                    <p>Copyright © 2022 - All right reserved by Zehadul Islam</p>
                 </div>
             </footer>
         </div>

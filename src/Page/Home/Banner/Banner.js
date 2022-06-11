@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Banner.css';
 import hero from "../../../pic/bnanner1.jpg"
 import { Typewriter } from "react-simple-typewriter"
-
+import { useTypewriter } from 'react-simple-typewriter'
 const Banner = () => {
+    const [count, setCount] = useState(0)
+    const handleType = (counter) => {
+        setCount(counter)
+        console.log('this function run every type on Component')
+    }
+    const handleDone = () => {
+        console.log('done from typewriter component')
+    }
+
     return (
         <div>
             <section className='hero container' id='home'>
@@ -17,7 +26,8 @@ const Banner = () => {
 
                             <span>
 
-                                <Typewriter words={[" Web Developer.", "Full Stack developer"]} loop cursor cursorStyle='|' typeSpeed={70} deleteSpeed={50} delaySpeed={1000} />
+                                <Typewriter words={[" Web Developer.", "Full Stack developer"]} loop={1} cursor cursorStyle='|' typeSpeed={70} deleteSpeed={50} delaySpeed={1000} onLoopDone={handleDone}
+                                    onType={handleType} />
                             </span>
                         </h2>
 

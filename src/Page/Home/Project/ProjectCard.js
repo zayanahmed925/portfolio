@@ -10,6 +10,7 @@ const ProjectCard = ({ value }) => {
             </figure>
             <div className="card-body  ">
                 <h2 className="card-title">{value.title}</h2>
+                <h5 className='text-sm'><i class="fa-solid fa-arrow-right mr-4"></i>{value.detail}</h5>
             </div>
             <Link to={`/project/${value.id}`}>
                 <button className='btn_shadow w-full'>
