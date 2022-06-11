@@ -36,12 +36,14 @@ const Contact = () => {
                                     <img src='' alt='' />
                                 </div>
                                 <div className='details'>
-                                    <h1>Hi, This is Zehadul Islam</h1>
+                                    <img src="https://i.ibb.co/6WC9WyM/1997f3da28e8d29289097871f45b04fd.gif" alt="" />
+                                    {/* <h1>Hi, This is Zehadul Islam</h1>
                                     <p>Full Stack web developer</p>
                                     <p>I am a front-end web application developer, and I am especially proﬁcient with Javascript and React.js frameworks.</p> <br />
                                     <p>Phone: 01621074325</p>
                                     <p>Email: zehadul925@gmail.com</p> <br />
-                                    <span >BEST SKILL ON</span>
+                                    <span >BEST SKILL ON</span> */}
+
                                     <div className='button '>
                                         <button className='btn_shadow'>
                                             <i class="fa-brands fa-js"></i>

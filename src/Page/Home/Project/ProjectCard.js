@@ -13,7 +13,7 @@ const ProjectCard = ({ value }) => {
             </div>
             <Link to={`/project/${value.id}`}>
                 <button className='btn_shadow w-full'>
-                    SEND MESSAGE <i className='fa fa-long-arrow-right'></i>
+                    MORE  DETAILS <i className='fa fa-long-arrow-right'></i>
                 </button>
             </Link>
 

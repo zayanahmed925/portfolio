@@ -28,11 +28,13 @@ const Banner = () => {
                                 <h4>FIND WITH ME</h4>
                                 <div className='button grid gap-1'>
                                     <button className='btn_shadow'>
-                                        <i class="fa-brands fa-linkedin"></i>
+
+                                        <a href="https://www.linkedin.com/in/zehadul-islam/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
 
                                     </button>
                                     <button className='btn_shadow'>
-                                        <i class="fa-brands fa-github"></i>
+                                        <a href="https://github.com/zayanahmed925" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-github"></i></a>
+
                                     </button>
 
                                 </div>

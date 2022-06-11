@@ -10,19 +10,10 @@ const ProjectDetail = () => {
         fetch('/project.json')
             .then(res => res.json())
             .then(data => setProjectDetail(data))
-
-
-        // set
-        // console.log(singelProduct);
-
-
     }, [])
-    // const singelProduct = projectDetail.filter(d => d.id === projectId)
-    // console.log(singelProduct);
 
-    // const singelProject = projectDetail.filter()
     console.log(projectDetail);
-    console.log(projectId);
+    // console.log(projectId);
     return (
         <div className=' mx-auto'>
             {
@@ -58,15 +49,14 @@ const ProjectDetail = () => {
                                         </ul>
                                         <div className='grid grid-cols-6 mt-6'>
                                             <div className=''><button className='btn_shadow'>
-                                                <a href={project.live} target="_blank" rel="noopener noreferrer"></a>
                                                 <a href={project.live} target="_blank">Live Site<i className='fa fa-long-arrow-right'></i></a>
                                             </button></div>
                                             <div className=''><button className='btn_shadow'>
-                                                <a href="">Client <i className='fa fa-long-arrow-right'></i></a>
+                                                <a href={project.client} target="_blank">Client <i className='fa fa-long-arrow-right'></i></a>
                                             </button></div>
                                             {
                                                 project.description2 ? <div className=''><button className='btn_shadow'>
-                                                    <a href="">Server <i className='fa fa-long-arrow-right'></i></a>
+                                                    <a href={project?.server} target="_blank">Server <i className='fa fa-long-arrow-right'></i></a>
                                                 </button></div> : ''
                                             }
                                         </div>
