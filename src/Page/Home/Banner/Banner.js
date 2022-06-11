@@ -14,7 +14,7 @@ const Banner = () => {
                         <h1 className='md:text-3xl lg:text-5xl font-bold'>
                             I’m Zehadul Islam
                         </h1>
-                        <h2 className='md:text-3xl'>
+                        <h2 className='md:text-3xl my-3'>
 
                             <span>
 
@@ -32,7 +32,7 @@ const Banner = () => {
                             </span>
                         </h2>
 
-                        <p> I am a front-end web application developer, and I am especially proﬁcient with Javascript and React.js frameworks..</p>
+                        <p className='mt-12'> I am a front-end web application developer, and I am especially proﬁcient with Javascript and React.js frameworks..</p>
 
                         <div className=' d_flex mt-12 '>
                             <div className='col_1 '>
